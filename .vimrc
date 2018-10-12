@@ -42,3 +42,8 @@ filetype plugin indent on    " required
 
 
 set tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+
+" enable powerline in one window
+set laststatus=2
+" execute some python files
+imap <F5> <Esc>:w<CR>:!clear;python %<CR>
